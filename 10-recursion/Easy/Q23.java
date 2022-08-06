@@ -7,7 +7,7 @@ class Q23 {
 		if (num == 0) {
 			return s;
 		}
-		if (num % 2 == 0) {
+		if (!((num & 1) == 1)) {
 			return steps(num / 2, s + 1);
 		}
 		return steps(num - 1, s + 1);
